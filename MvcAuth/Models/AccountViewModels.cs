@@ -8,6 +8,9 @@ namespace MvcAuth.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        public string LoginUsername { get; set; }
+        public string Password { get; set; }
     }
 
     public class ExternalLoginListViewModel

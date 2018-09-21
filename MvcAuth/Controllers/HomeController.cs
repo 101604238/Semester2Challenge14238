@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace MvcAuth.Controllers
 {
+    [RequireHttps]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -26,5 +27,6 @@ namespace MvcAuth.Controllers
 
             return View();
         }
+
     }
 }

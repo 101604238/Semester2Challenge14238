@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Modules]
+(
+	[Id] NVARCHAR(30) NOT NULL,
+	[MacAddress] NVARCHAR(20) NOT NULL,
+	[IssueDate] NVARCHAR(15) NOT NULL,
+
+	CONSTRAINT Pk_Modules PRIMARY KEY (Id),
+	CONSTRAINT Fk_Id FOREIGN KEY (id) REFERENCES Students(Id),
+)

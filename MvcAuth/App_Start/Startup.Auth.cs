@@ -63,6 +63,9 @@ namespace MvcAuth
             //    ClientId = "",
             //    ClientSecret = ""
             //});
+            app.UseGoogleAuthentication(
+                clientId: "883949917217-0h4a4m1dk5v0t44qcrgh6dr449s5hn7o.apps.googleusercontent.com",
+                clientSecret: "72wHBxtMf0STFvIOCq5Fza3s");
         }
     }
 }
